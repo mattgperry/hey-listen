@@ -1,6 +1,6 @@
 # Hey, Listen!
 
-### Tiny versions of popular dev-experience functions like `warning` and `invariant`
+### Dev-ex warning functions with added childhood flashbacks
 
 [![npm version](https://img.shields.io/npm/v/hey-listen.svg?style=flat-square)](https://www.npmjs.com/package/hey-listen)
 [![npm downloads](https://img.shields.io/npm/dm/hey-listen.svg?style=flat-square)](https://www.npmjs.com/package/hey-listen)
