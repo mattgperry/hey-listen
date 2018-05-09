@@ -1,2 +1,46 @@
-# hey-listen
-Tiny versions of popular dev-ex functions like warning and invariant
+# Hey, Listen!
+
+### Tiny versions of popular dev-experience functions like `warning` and `invariant`
+
+[![npm version](https://img.shields.io/npm/v/hey-listen.svg?style=flat-square)](https://www.npmjs.com/package/hey-listen)
+[![npm downloads](https://img.shields.io/npm/dm/hey-listen.svg?style=flat-square)](https://www.npmjs.com/package/hey-listen)
+[![Twitter Follow](https://img.shields.io/twitter/follow/popmotionjs.svg?style=social&label=Follow)](http://twitter.com/popmotionjs)
+[![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/popmotion)
+
+Hey, Listen! provides simple versions of the popular `warning` and `invariant` dev-experience functions.
+
+Except, of course, every message is prepended with "Hey, listen!" and no there's no way of turning this off.
+
+The library checks against `process.env.NODE_ENV` to minify away messages in production.
+
+## Install
+
+### npm
+
+```bash
+npm install hey-listen
+```
+
+### Yarn
+
+```bash
+yarn add hey-listen
+```
+
+## Usage
+
+### `warning`
+
+```javascript
+import { warning } from 'hey-listen';
+
+warning(false, 'Warning message'); // console.warn "Hey, listen! Warning message"
+```
+
+### `invariant`
+
+```javascript
+import { invariant } from 'hey-listen';
+
+invariant(false, 'Warning message'); // throws "HEY, LISTEN! Warning message"
+```

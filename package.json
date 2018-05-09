@@ -1,0 +1,31 @@
+{
+  "name": "hey-listen",
+  "version": "1.0.0",
+  "description":
+    "Tiny versions of popular dev-ex functions like warning and invariant",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Popmotion/hey-listen.git"
+  },
+  "keywords": ["warning", "invariant"],
+  "author": "Matt Perry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Popmotion/hey-listen/issues"
+  },
+  "homepage": "https://github.com/Popmotion/hey-listen#readme",
+  "dependencies": {
+    "@types/node": "^10.0.6",
+    "typescript": "^2.8.3"
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
