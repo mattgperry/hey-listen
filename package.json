@@ -1,14 +1,14 @@
 {
   "name": "hey-listen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description":
     "Tiny versions of popular dev-ex functions like warning and invariant",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "tsc",
     "watch": "tsc -w",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run test && npm run build"
   },
   "repository": {
     "type": "git",
@@ -21,9 +21,20 @@
     "url": "https://github.com/Popmotion/hey-listen/issues"
   },
   "homepage": "https://github.com/Popmotion/hey-listen#readme",
-  "dependencies": {
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
     "@types/node": "^10.0.6",
+    "jest": "^22.4.3",
+    "ts-jest": "^22.4.5",
     "typescript": "^2.8.3"
+  },
+  "jest": {
+    "moduleFileExtensions": ["ts", "js", "json", "node"],
+    "transform": {
+      "\\.(ts)$": "../node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "/_tests/.*\\.(ts|js)$",
+    "rootDir": "src"
   },
   "prettier": {
     "singleQuote": true
