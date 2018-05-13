@@ -14,7 +14,7 @@ const umd = Object.assign({}, config, {
   output: {
     file: 'dist/hey-listen.js',
     format: 'umd',
-    name: 'hey-listen',
+    name: 'heyListen',
     exports: 'named'
   },
   plugins: [typescript(noDeclarationConfig)]
