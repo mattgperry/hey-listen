@@ -1,19 +1,17 @@
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
 var HEY_LISTEN = 'Hey, listen! ';
-exports.warning = function () { };
-exports.invariant = function () { };
+var warning = function () { };
+var invariant = function () { };
 if (process.env.NODE_ENV !== 'production') {
-    exports.warning = function (check, message) {
+    warning = function (check, message) {
         if (!check && typeof console !== 'undefined') {
             console.warn(HEY_LISTEN + message);
         }
     };
-    exports.invariant = function (check, message) {
+    invariant = function (check, message) {
         if (!check) {
             throw new Error(HEY_LISTEN.toUpperCase() + message);
         }
     };
 }
+
+export { warning, invariant };
