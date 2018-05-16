@@ -1,6 +1,6 @@
 {
   "name": "hey-listen",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description":
     "Popular dev-ex functions like warning and invariant, with added childhood flashbacks.",
   "main": "lib/index.js",

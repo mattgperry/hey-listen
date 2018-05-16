@@ -30,7 +30,8 @@ const umdProd = Object.assign({}, umd, {
 const es = Object.assign({}, config, {
   output: {
     file: 'dist/hey-listen.es.js',
-    format: 'es'
+    format: 'es',
+    exports: 'named'
   },
   plugins: [typescript(noDeclarationConfig)]
 });
@@ -38,7 +39,8 @@ const es = Object.assign({}, config, {
 const cjs = Object.assign({}, config, {
   output: {
     file: 'lib/index.js',
-    format: 'cjs'
+    format: 'cjs',
+    exports: 'named'
   },
   plugins: [typescript(typescriptConfig)]
 });

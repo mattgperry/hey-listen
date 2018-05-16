@@ -2,6 +2,10 @@
 
 Hey, Listen! adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.5] 2018-05-16
+
+* Fixing Rollup config.
+
 ## [1.0.3] 2018-05-13
 
 * Adding UMD bundles via Rollup
