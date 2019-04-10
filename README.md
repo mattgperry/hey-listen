@@ -9,8 +9,6 @@
 
 Hey, Listen! provides simple versions of the popular `warning` and `invariant` dev-experience functions.
 
-Except, of course, every message is prepended with "Hey, listen!" and no there's no way of turning this off.
-
 The library checks against `process.env.NODE_ENV` to minify away messages in production.
 
 ## Install
@@ -34,7 +32,7 @@ yarn add hey-listen
 ```javascript
 import { warning } from 'hey-listen';
 
-warning(false, 'Warning message'); // console.warn "Hey, listen! Warning message"
+warning(false, 'Warning message'); // console.warn "Warning message"
 ```
 
 ### `invariant`
@@ -42,5 +40,5 @@ warning(false, 'Warning message'); // console.warn "Hey, listen! Warning message
 ```javascript
 import { invariant } from 'hey-listen';
 
-invariant(false, 'Warning message'); // throws "HEY, LISTEN! Warning message"
+invariant(false, 'Error message'); // throws "Error message"
 ```
