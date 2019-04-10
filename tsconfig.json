@@ -13,8 +13,13 @@
     "baseUrl": "src/",
     "alwaysStrict": true,
     "declaration": true,
+    "declarationDir": "types",
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "noImplicitUseStrict": false,
+    "noUnusedParameters": true,
     "lib": ["es5", "es6", "dom"]
   },
   "include": ["src/**/*"],

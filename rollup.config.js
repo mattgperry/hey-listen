@@ -38,7 +38,7 @@ const es = Object.assign({}, config, {
 
 const cjs = Object.assign({}, config, {
   output: {
-    file: 'lib/index.js',
+    file: 'dist/index.js',
     format: 'cjs',
     exports: 'named'
   },
