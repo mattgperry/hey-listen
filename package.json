@@ -1,6 +1,6 @@
 {
   "name": "hey-listen",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Warning and invariant dev-ex messaging.",
   "main": "lib/index.js",
   "types": "./lib/index.d.ts",
@@ -29,11 +29,11 @@
   "devDependencies": {
     "@types/jest": "^22.2.3",
     "@types/node": "^10.0.6",
-    "jest": "^22.4.3",
-    "ts-jest": "^22.4.5",
-    "typescript": "^2.8.3",
+    "jest": "^24.7.1",
     "rollup-plugin-typescript2": "^0.14.0",
-    "rollup-plugin-uglify": "^3.0.0"
+    "rollup-plugin-uglify": "^3.0.0",
+    "ts-jest": "^22.4.5",
+    "typescript": "^2.8.3"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -50,5 +50,8 @@
   },
   "prettier": {
     "singleQuote": true
+  },
+  "dependencies": {
+    "rollup": "^1.9.2"
   }
 }

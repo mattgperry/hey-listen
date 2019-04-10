@@ -4,7 +4,7 @@ test('throws on error', () => {
   try {
     invariant(false, 'Test');
   } catch (e) {
-    expect(e).toEqual(new Error('HEY, LISTEN! Test'));
+    expect(e).toEqual(new Error('Test'));
   }
 });
 
