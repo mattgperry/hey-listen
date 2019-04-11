@@ -30,6 +30,7 @@
     "@types/jest": "^22.2.3",
     "@types/node": "^10.0.6",
     "jest": "^24.7.1",
+    "rollup": "^1.9.2",
     "rollup-plugin-typescript2": "^0.14.0",
     "rollup-plugin-uglify": "^3.0.0",
     "ts-jest": "^22.4.5",
@@ -50,8 +51,5 @@
   },
   "prettier": {
     "singleQuote": true
-  },
-  "dependencies": {
-    "rollup": "^1.9.2"
   }
 }
