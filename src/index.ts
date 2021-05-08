@@ -3,7 +3,7 @@ export type DevMessage = (check: boolean, message: string) => void;
 let warning: DevMessage = () => {};
 let invariant: DevMessage = () => {};
 
-if (process.env.NODE_ENV !== 'production') {
+if (process && process.env && process.env.NODE_ENV !== 'production') {
   warning = (check, message) => {
     if (!check && typeof console !== 'undefined') {
       console.warn(message);
